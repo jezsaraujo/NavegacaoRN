@@ -15,7 +15,7 @@ function Tabs(){
   return(
     <Tab.Navigator>
       <Tab.Screen name= "Feed" component={Home}/>
-      <Tab.Screen name= "Sobre" component={Sobre}/>
+      <Tab.Screen name= "Perfil" component={Perfil}/>
     </Tab.Navigator>
   )
 }
@@ -34,7 +34,7 @@ export default function App() {
         },
         headerTintColor: '#fff'
     }}/>
-      <Stack.Screen name= "Perfil" component={Perfil}/> 
+      <Stack.Screen name= "Sobre" component={Sobre}/> 
     </Stack.Navigator>
   </NavigationContainer>
   );
