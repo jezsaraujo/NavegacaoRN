@@ -25,6 +25,8 @@ export default function Home({navigation}) {
       title = "Voltar título"
       onPress = {()=> navigation.setOptions({title: "Home"})}
       />
+
+
     </View>
   );
 }

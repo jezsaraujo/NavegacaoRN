@@ -7,6 +7,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './src/pages/Home';
 import Sobre from './src/pages/Sobre';
 import Perfil from './src/pages/Perfil';
+import Contato from './src/pages/Contato';
 
 const Stack = createNativeStackNavigator(); 
 const Tab = createBottomTabNavigator();
@@ -16,6 +17,7 @@ function Tabs(){
     <Tab.Navigator>
       <Tab.Screen name= "Feed" component={Home}/>
       <Tab.Screen name= "Perfil" component={Perfil}/>
+      <Tab.Screen name= "Contato" component={Contato}  initialParams={{nome:"Jess", tel:"9XXXX-XXXX", end:"Rua X, Bairro Y"}}/>
     </Tab.Navigator>
   )
 }
